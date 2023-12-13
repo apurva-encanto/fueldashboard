@@ -147,10 +147,19 @@
                  <i class="nav-icon fas fa-file-alt"></i>
                  <p>
                      Report
-                     <span class="badge badge-info right">2</span>
                  </p>
              </a>
          </li>
+         <li class="nav-header">Setting</li>
+         <li class="nav-item">
+             <a href="<?= base_url('admin/report/import') ?>" class="nav-link">
+                 <i class="nav-icon fas fa-user"></i>
+                 <p>
+                     Change Profile
+                 </p>
+             </a>
+         </li>
+
 
      </ul>
  </nav>
