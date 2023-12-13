@@ -5,7 +5,8 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Login::adminLogin');
+$routes->get('/admin', 'Login::adminLogin');
 $routes->get('/test', 'Home::getTest');
 $routes->get('/logout', 'Login::logout');
 $routes->group('admin', ['filter' => 'authGuard'], function ($routes) {
