@@ -1,0 +1,105 @@
+CRITICAL - 2023-12-08 05:55:56 --> Undefined variable $business
+in APPPATH\Views\admin\search.php on line 50.
+ 1 APPPATH\Views\admin\search.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $business', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php', 50)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\VehicleController.php(14): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\VehicleController->addVehicles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VehicleController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 05:56:31 --> Undefined variable $business
+in APPPATH\Views\admin\search.php on line 50.
+ 1 APPPATH\Views\admin\search.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $business', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php', 50)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\VehicleController.php(14): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\VehicleController->addVehicles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VehicleController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 06:42:31 --> The route for "admin/list-vehicles" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/list-vehicles')
+ 2 APPPATH\Controllers\VehicleController.php(49): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\VehicleController->storeVehicle()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VehicleController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 06:52:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\ReportController.php on line 139.
+ 1 APPPATH\Controllers\ReportController.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 139)
+ 2 APPPATH\Controllers\ReportController.php(54): App\Controllers\ReportController->returnClientId('JEAN LUC WILAIN')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImport()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 07:02:07 --> include(admin/vehicle/list.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 103.
+ 1 APPPATH\Views\index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/vehicle/list.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 103)
+ 2 APPPATH\Views\index.php(103): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\VehicleController.php(56): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\VehicleController->listVehicles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VehicleController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 07:02:31 --> Undefined variable $lists
+in APPPATH\Views\admin\vehicle\list.php on line 56.
+ 1 APPPATH\Views\admin\vehicle\list.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lists', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\vehicle\\list.php', 56)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\vehicle\\list.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\VehicleController.php(56): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\VehicleController->listVehicles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VehicleController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-08 07:10:46 --> mysqli_sql_exception: Unknown column 'departments.department_name' in 'field list' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `vehicle...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `vehicle...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `vehicle...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `vehicle...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\VehicleController.php(62): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\VehicleController->listVehicles()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VehicleController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-08 07:10:46 --> Unknown column 'departments.department_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `vehicles`.*, `departments`.`department_name`, `business`.`business_name`, `clients`.`client_name`, `companies`.`company_name`
+FROM `vehicles`
+LEFT JOIN `business` ON `business`.`id` = `departments`.`business_id`
+LEFT JOIN `clients` ON `clients`.`id` = `departments`.`client_id`
+LEFT JOIN `companies` ON `companies`.`id` = `departments`.`company_id`
+WHERE `departments`.`is_delete` = :departments.is_delete:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\VehicleController.php(62): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\VehicleController->listVehicles()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VehicleController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 12:33:09 --> include(admin/report/generate.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 103.
+ 1 APPPATH\Views\index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/report/generate.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 103)
+ 2 APPPATH\Views\index.php(103): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(269): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

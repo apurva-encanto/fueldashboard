@@ -1,0 +1,383 @@
+CRITICAL - 2023-12-12 07:07:44 --> Call to undefined method App\Models\Business::all
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Admin.php(23): CodeIgniter\Model->__call('all', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:10:04 --> Call to a member function count() on array
+in APPPATH\Controllers\Admin.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:10:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::count()
+in APPPATH\Controllers\Admin.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:11:20 --> Call to undefined method App\Models\Business::count()
+in APPPATH\Controllers\Admin.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:11:31 --> Call to undefined method App\Models\Business::count()
+in APPPATH\Controllers\Admin.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:11:55 --> Call to undefined method App\Models\Business::get()
+in APPPATH\Controllers\Admin.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:13:23 --> Call to a member function count() on array
+in APPPATH\Controllers\Admin.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:14:15 --> Call to undefined method App\Models\Business::get()
+in APPPATH\Controllers\Admin.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:14:59 --> Call to undefined method App\Models\Business::get()
+in APPPATH\Controllers\Admin.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:36:51 --> Undefined variable $companies
+in APPPATH\Views\admin\report\add.php on line 41.
+ 1 APPPATH\Views\admin\report\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 41)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(160): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:37:47 --> Undefined variable $companies
+in APPPATH\Views\admin\report\add.php on line 41.
+ 1 APPPATH\Views\admin\report\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 41)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(160): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:38:28 --> Undefined variable $companies
+in APPPATH\Views\admin\report\add.php on line 41.
+ 1 APPPATH\Views\admin\report\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 41)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(164): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:41:16 --> Undefined variable $companies
+in APPPATH\Views\admin\report\add.php on line 41.
+ 1 APPPATH\Views\admin\report\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 41)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(164): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 07:41:19 --> Undefined variable $companies
+in APPPATH\Views\admin\report\add.php on line 41.
+ 1 APPPATH\Views\admin\report\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 41)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(164): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 08:47:53 --> Undefined array key "company_name"
+in APPPATH\Views\admin\report\add.php on line 43.
+ 1 APPPATH\Views\admin\report\add.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "company_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 43)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(166): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 08:48:08 --> Undefined array key "company_name"
+in APPPATH\Views\admin\report\add.php on line 43.
+ 1 APPPATH\Views\admin\report\add.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "company_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 43)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(166): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 08:49:08 --> Undefined array key "company_name"
+in APPPATH\Views\admin\report\add.php on line 43.
+ 1 APPPATH\Views\admin\report\add.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "company_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 43)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(166): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 08:51:06 --> Undefined array key "company_name"
+in APPPATH\Views\admin\report\add.php on line 43.
+ 1 APPPATH\Views\admin\report\add.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "company_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 43)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(169): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->getReportImport()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 09:30:12 --> mysqli_sql_exception: Not unique table/alias: 'reports' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 09:30:12 --> Not unique table/alias: 'reports'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `vehicles`.`vehicle_no` as `vehicle_name`, `companies`.`company_name`, `departments`.`department_name`, `clients`.`client_name` as `client_name`
+FROM (`reports`, `reports`)
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 09:30:46 --> mysqli_sql_exception: Not unique table/alias: 'reports' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 09:30:46 --> Not unique table/alias: 'reports'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `vehicles`.`vehicle_no` as `vehicle_name`, `companies`.`company_name`, `departments`.`department_name`, `clients`.`client_name` as `client_name`
+FROM (`reports`, `reports`)
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 09:31:10 --> syntax error, unexpected variable "$results"
+in APPPATH\Controllers\ReportController.php on line 317.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ReportController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ReportController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\ReportController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 09:31:25 --> mysqli_sql_exception: Not unique table/alias: 'reports' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 09:31:25 --> Not unique table/alias: 'reports'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `vehicles`.`vehicle_no` as `vehicle_name`, `companies`.`company_name`, `departments`.`department_name`, `clients`.`client_name` as `client_name`
+FROM (`reports`, `reports`)
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 09:31:45 --> mysqli_sql_exception: Not unique table/alias: 'reports' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 09:31:45 --> Not unique table/alias: 'reports'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*
+FROM (`reports`, `reports`)
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 09:32:02 --> mysqli_sql_exception: Not unique table/alias: 'reports' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 09:32:02 --> Not unique table/alias: 'reports'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*
+FROM `reports`, `reports`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportController.php(317): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 09:32:46 --> Call to a member function get() on array
+in APPPATH\Controllers\ReportController.php on line 316.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 09:33:36 --> syntax error, unexpected token "->"
+in APPPATH\Controllers\ReportController.php on line 314.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ReportController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ReportController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\ReportController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 10:06:17 --> Undefined variable $pager
+in APPPATH\Views\admin\report\generate.php on line 289.
+ 1 APPPATH\Views\admin\report\generate.php(289): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 289)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(325): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 10:22:59 --> Undefined variable $companies
+in APPPATH\Views\admin\report\generate.php on line 166.
+ 1 APPPATH\Views\admin\report\generate.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $companies', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 166)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(325): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 10:25:59 --> Undefined array key ""
+in APPPATH\Views\admin\report\generate.php on line 172.
+ 1 APPPATH\Views\admin\report\generate.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 172)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(325): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 10:40:54 --> Invalid file: "generate.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('generate.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('generate.php', [], true)
+ 3 APPPATH\Controllers\ReportController.php(325): view('generate.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 10:41:03 --> Invalid file: "generate.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('generate.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('generate', [], true)
+ 3 APPPATH\Controllers\ReportController.php(325): view('generate', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:21:19 --> Undefined variable $session
+in APPPATH\Controllers\ReportController.php on line 346.
+ 1 APPPATH\Controllers\ReportController.php(346): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 346)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:12:29 --> Undefined variable $pager
+in APPPATH\Views\admin\report\generate.php on line 160.
+ 1 APPPATH\Views\admin\report\generate.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 160)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(345): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

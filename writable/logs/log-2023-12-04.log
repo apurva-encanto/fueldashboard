@@ -1,0 +1,151 @@
+CRITICAL - 2023-12-04 13:43:26 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 13:44:59 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-04 12:51:48 --> Invalid file: "test.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('test.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 12:52:02 --> Invalid file: "test.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('test.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:24:50 --> syntax error, unexpected identifier "alt", expecting ")"
+in APPPATH\Views\test.php on line 79.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:25:11 --> syntax error, unexpected identifier "alt", expecting ")"
+in APPPATH\Views\test.php on line 95.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:25:37 --> syntax error, unexpected token "class", expecting ")"
+in APPPATH\Views\test.php on line 181.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:38:13 --> include_once(layouts/site): Failed to open stream: No such file or directory
+in APPPATH\Views\test.php on line 1.
+ 1 APPPATH\Views\test.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(layouts/site): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\test.php', 1)
+ 2 APPPATH\Views\test.php(1): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\test.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('test')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:38:22 --> include_once(C:\xampp\htdocs\apurva\fuel-consumption\app\Views\layouts): Failed to open stream: Permission denied
+in APPPATH\Views\test.php on line 1.
+ 1 APPPATH\Views\test.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\layouts): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\test.php', 1)
+ 2 APPPATH\Views\test.php(1): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\test.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('test')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:38:30 --> include_once(layouts/index): Failed to open stream: No such file or directory
+in APPPATH\Views\test.php on line 1.
+ 1 APPPATH\Views\test.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(layouts/index): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\test.php', 1)
+ 2 APPPATH\Views\test.php(1): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\test.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('test')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:45:28 --> include_once(sidebar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 201.
+ 1 APPPATH\Views\index.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(sidebar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 201)
+ 2 APPPATH\Views\index.php(201): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:46:01 --> include(dasboard.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 209.
+ 1 APPPATH\Views\index.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(dasboard.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 209)
+ 2 APPPATH\Views\index.php(209): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:46:19 --> include(dasboard.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 209.
+ 1 APPPATH\Views\index.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(dasboard.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 209)
+ 2 APPPATH\Views\index.php(209): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:46:26 --> include_once(footer.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 215.
+ 1 APPPATH\Views\index.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(footer.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 215)
+ 2 APPPATH\Views\index.php(215): include_once()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 13:46:46 --> include(test.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 209.
+ 1 APPPATH\Views\index.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(test.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 209)
+ 2 APPPATH\Views\index.php(209): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

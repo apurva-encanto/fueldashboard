@@ -1,0 +1,113 @@
+CRITICAL - 2023-12-11 08:06:37 --> Undefined array key 7
+in APPPATH\Controllers\ReportController.php on line 179.
+ 1 APPPATH\Controllers\ReportController.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 08:06:49 --> Undefined array key 7
+in APPPATH\Controllers\ReportController.php on line 179.
+ 1 APPPATH\Controllers\ReportController.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 08:38:16 --> Class "DB" not found
+in APPPATH\Controllers\ReportController.php on line 262.
+ 1 APPPATH\Controllers\ReportController.php(181): App\Controllers\ReportController->returnCardHolderNameId('IBL CAR SCHEME BRAND ACTIV FROZEN FOODS')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 08:39:09 --> Class "DB" not found
+in APPPATH\Controllers\ReportController.php on line 262.
+ 1 APPPATH\Controllers\ReportController.php(181): App\Controllers\ReportController->returnCardHolderNameId('IBL CAR SCHEME BRAND ACTIV FROZEN FOODS')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 08:40:07 --> Class "DB" not found
+in APPPATH\Controllers\ReportController.php on line 262.
+ 1 APPPATH\Controllers\ReportController.php(181): App\Controllers\ReportController->returnCardHolderNameId('IBL CAR SCHEME BRAND ACTIV FROZEN FOODS')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 08:40:45 --> Class "Illuminate\Support\Facades\DB" not found
+in APPPATH\Controllers\ReportController.php on line 263.
+ 1 APPPATH\Controllers\ReportController.php(182): App\Controllers\ReportController->returnCardHolderNameId('IBL CAR SCHEME BRAND ACTIV FROZEN FOODS')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 08:44:14 --> Undefined property: App\Controllers\ReportController::$db
+in APPPATH\Controllers\ReportController.php on line 264.
+ 1 APPPATH\Controllers\ReportController.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ReportController::$db', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 264)
+ 2 APPPATH\Controllers\ReportController.php(182): App\Controllers\ReportController->returnCardHolderNameId('IBL CAR SCHEME BRAND ACTIV FROZEN FOODS')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 08:45:01 --> mysqli_sql_exception: Unknown column 'column_name' in 'field list' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT column_n...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT column_n...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT column_n...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(271): CodeIgniter\Database\BaseConnection->query('SELECT column_n...', Array)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(189): App\Controllers\ReportController->returnCardHolderNameId('IBL CAR SCHEME ...')
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-11 08:45:01 --> Unknown column 'column_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\ReportController.php(271): CodeIgniter\Database\BaseConnection->query('SELECT column_name FROM companies WHERE SOUNDEX(column_name) = SOUNDEX(?)', [...])
+ 2 APPPATH\Controllers\ReportController.php(189): App\Controllers\ReportController->returnCardHolderNameId('IBL CAR SCHEME BRAND ACTIV FROZEN FOODS')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 14:12:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fuel_consumptio...', 3306, '', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\Login.php(39): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\Login->adminLoginValidate()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\Login.php(39): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\Login->adminLoginValidate()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-11 14:12:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admins`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(39): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->adminLoginValidate()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

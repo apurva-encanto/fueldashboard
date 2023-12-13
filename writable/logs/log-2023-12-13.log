@@ -1,0 +1,895 @@
+CRITICAL - 2023-12-13 06:48:29 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\ReportController.php on line 345.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ReportController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ReportController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\ReportController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 06:49:22 --> Undefined variable $pager
+in APPPATH\Views\admin\report\generate.php on line 155.
+ 1 APPPATH\Views\admin\report\generate.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 155)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(344): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:18:16 --> fopen(upload/users.xlsx): Failed to open stream: No such file or directory
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(upload/users.xlsx): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('upload/users.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('upload/users.xlsx')
+ 4 APPPATH\Controllers\ReportController.php(357): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('upload/users.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:19:07 --> The route for "http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportController.php(359): redirect('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:19:08 --> The route for "http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportController.php(359): redirect('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:19:14 --> The route for "http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportController.php(359): redirect('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:19:19 --> The route for "http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportController.php(359): redirect('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:19:21 --> The route for "http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportController.php(359): redirect('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:19:27 --> The route for "http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportController.php(359): redirect('http://localhost/apurva/fuel-consumption//public/csvfile/users.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:19:57 --> fopen(public/csvfile/users.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(public/csvfile/users.xlsx): Failed to open stream: Resource temporarily unavailable', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('public/csvfile/users.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('public/csvfile/users.xlsx')
+ 4 APPPATH\Controllers\ReportController.php(357): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('public/csvfile/users.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 07:23:28 --> fopen(public/csvfile/users.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(public/csvfile/users.xlsx): Failed to open stream: Resource temporarily unavailable', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('public/csvfile/users.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('public/csvfile/users.xlsx')
+ 4 APPPATH\Controllers\ReportController.php(359): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('public/csvfile/users.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 09:51:25 --> Call to undefined method App\Models\ReportModel::sum
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\ReportController.php(349): CodeIgniter\Model->__call('sum', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 10:07:21 --> Undefined array key "client_name"
+in APPPATH\Views\admin\report\generate.php on line 126.
+ 1 APPPATH\Views\admin\report\generate.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "client_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 126)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(362): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 10:10:53 --> Undefined array key "sum_terminal"
+in APPPATH\Views\admin\report\generate.php on line 184.
+ 1 APPPATH\Views\admin\report\generate.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sum_terminal"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 184)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(363): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:13:03 --> mysqli_sql_exception: Unknown column 'vehicles.business_id' in 'where clause' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ROUND(su...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROUND(su...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROUND(su...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT ROUND(su...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(360): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:13:03 --> Unknown column 'vehicles.business_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+WHERE `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(360): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:14:32 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:14:32 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:15:00 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:15:00 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:15:04 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:15:04 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:15:32 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:15:32 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:15:33 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:15:33 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:16:19 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:16:19 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:16:21 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:16:21 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:16:37 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:16:37 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 10:16:45 --> Undefined variable $charts
+in APPPATH\Views\admin\report\generate.php on line 184.
+ 1 APPPATH\Views\admin\report\generate.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $charts', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 184)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(371): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:17:28 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:17:28 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:17:39 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:17:39 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `vehicles`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:18:10 --> mysqli_sql_exception: Not unique table/alias: 'vehicles' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:18:10 --> Not unique table/alias: 'vehicles'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(354): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:18:45 --> mysqli_sql_exception: Not unique table/alias: 'companies' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:18:45 --> Not unique table/alias: 'companies'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, `companies`.`company_name`, `v1`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` `v1` ON `v1`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `v1`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `v1`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:19:15 --> mysqli_sql_exception: Not unique table/alias: 'clients' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:19:15 --> Not unique table/alias: 'clients'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`, `reports`.*, `c1`.`company_name`, `v1`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`
+FROM `reports`
+LEFT JOIN `vehicles` ON `vehicles`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` ON `companies`.`id` = `vehicles`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `vehicles`.`department_id`
+LEFT JOIN `vehicles` `v1` ON `v1`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` `c1` ON `c1`.`id` = `v1`.`company_id`
+LEFT JOIN `clients` ON `clients`.`id` = `c1`.`client_id`
+LEFT JOIN `departments` ON `departments`.`id` = `v1`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+AND `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id.1:
+AND `vehicles`.`client_id` = :vehicles.client_id.1:
+AND `vehicles`.`company_id` = :vehicles.company_id.1:
+AND `reports`.`vehicle_no` = :reports.vehicle_no.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(355): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 10:21:36 --> Undefined array key "client_name"
+in APPPATH\Views\admin\report\generate.php on line 126.
+ 1 APPPATH\Views\admin\report\generate.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "client_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php', 126)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\generate.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(372): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:21:56 --> mysqli_sql_exception: Unknown column 'vehicles.business_id' in 'where clause' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ROUND(su...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROUND(su...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROUND(su...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT ROUND(su...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(369): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 10:21:56 --> Unknown column 'vehicles.business_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT ROUND(sum(terminal_price), 2) as sum_terminal, ROUND(sum(discount_rate), 2) as discount_rate_amt, ROUND(sum(customer_price), 2) as customer_price_val
+FROM `reports`
+LEFT JOIN `vehicles` `v1` ON `v1`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` `c1` ON `c1`.`id` = `v1`.`company_id`
+LEFT JOIN `clients` `cl` ON `cl`.`id` = `c1`.`client_id`
+LEFT JOIN `departments` `d` ON `d`.`id` = `v1`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ReportController.php(369): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:22:59 --> mysqli_sql_exception: Unknown column 'vehicles.business_id' in 'where clause' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(353): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-13 10:22:59 --> Unknown column 'vehicles.business_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `reports`
+LEFT JOIN `vehicles` `v1` ON `v1`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` `c1` ON `c1`.`id` = `v1`.`company_id`
+LEFT JOIN `clients` `cl` ON `cl`.`id` = `c1`.`client_id`
+LEFT JOIN `departments` `d` ON `d`.`id` = `v1`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `vehicles`.`business_id` = :vehicles.business_id:
+AND `vehicles`.`client_id` = :vehicles.client_id:
+AND `vehicles`.`company_id` = :vehicles.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\ReportController.php(353): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:23:12 --> mysqli_sql_exception: Unknown column 'companies.company_name' in 'field list' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(1207): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(357): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#10 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-13 10:23:12 --> Unknown column 'companies.company_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `companies`.`company_name`, `vehicles`.`vehicle_no` as `vehicle_name`, `clients`.`client_name` as `client_name`, `departments`.`department_name`
+FROM `reports`
+LEFT JOIN `vehicles` `v1` ON `v1`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` `c1` ON `c1`.`id` = `v1`.`company_id`
+LEFT JOIN `clients` `cl` ON `cl`.`id` = `c1`.`client_id`
+LEFT JOIN `departments` `d` ON `d`.`id` = `v1`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `v1`.`business_id` = :v1.business_id:
+AND `v1`.`client_id` = :v1.client_id:
+AND `v1`.`company_id` = :v1.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(10, 0)
+ 4 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\BaseModel->findAll(10, 0)
+ 5 APPPATH\Controllers\ReportController.php(357): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 10:23:44 --> mysqli_sql_exception: Unknown column 'cl.company_name' in 'field list' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `reports...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reports...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reports...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(1207): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(357): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#10 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-13 10:23:44 --> Unknown column 'cl.company_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `reports`.*, `cl`.`company_name`, `v1`.`vehicle_no` as `vehicle_name`, `cl`.`client_name` as `client_name`, `d`.`department_name`
+FROM `reports`
+LEFT JOIN `vehicles` `v1` ON `v1`.`id` = `reports`.`vehicle_no`
+LEFT JOIN `companies` `c1` ON `c1`.`id` = `v1`.`company_id`
+LEFT JOIN `clients` `cl` ON `cl`.`id` = `c1`.`client_id`
+LEFT JOIN `departments` `d` ON `d`.`id` = `v1`.`department_id`
+WHERE `reports`.`vehicle_no` IS NOT NULL
+AND `v1`.`business_id` = :v1.business_id:
+AND `v1`.`client_id` = :v1.client_id:
+AND `v1`.`company_id` = :v1.company_id:
+AND `reports`.`vehicle_no` = :reports.vehicle_no:
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(10, 0)
+ 4 SYSTEMPATH\BaseModel.php(1207): CodeIgniter\BaseModel->findAll(10, 0)
+ 5 APPPATH\Controllers\ReportController.php(357): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->generateReportData()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 11:30:31 --> Undefined array key 6
+in APPPATH\Controllers\ReportController.php on line 214.
+ 1 APPPATH\Controllers\ReportController.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImportBulkData()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,179 @@
+CRITICAL - 2023-12-06 06:40:21 --> Cannot declare class App\Database\Migrations\CreateCompaniesTable, because the name is already in use
+in APPPATH\Database\Migrations\2023-12-06-063810_CreateCompaniesTable.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-12-06 06:40:47 --> mysqli_sql_exception: Table 'companies' already exists in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\apurva\fuel-consumption\app\Database\Migrations\2023-12-05-140104_CreateCompaniesTable.php(23): CodeIgniter\Database\Forge->createTable('companies')
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MigrationRunner.php(873): App\Database\Migrations\CreateCompaniesTable->up()
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-06 07:01:00 --> mysqli_sql_exception: Unknown column 'clients.business_id' in 'on clause' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `compani...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `compani...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `compani...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `compani...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\CompanyController.php(76): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\CompanyController->listCompany()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-06 07:01:00 --> Unknown column 'clients.business_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `companies`.*, `business`.`business_name`
+FROM `companies`
+LEFT JOIN `business` ON `business`.`id` = `clients`.`business_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+WHERE `companies`.`is_delete` = :companies.is_delete:
+AND `business`.`is_delete` = :business.is_delete:
+AND `clients`.`is_delete` = :clients.is_delete:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CompanyController.php(76): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->listCompany()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:02:16 --> Undefined array key "client_name"
+in APPPATH\Views\admin\client\list.php on line 58.
+ 1 APPPATH\Views\admin\client\list.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "client_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\client\\list.php', 58)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\client\\list.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\CompanyController.php(81): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->listCompany()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:02:49 --> Undefined array key "client_name"
+in APPPATH\Views\admin\client\list.php on line 58.
+ 1 APPPATH\Views\admin\client\list.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "client_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\client\\list.php', 58)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\client\\list.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\CompanyController.php(81): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->listCompany()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:02:50 --> Undefined array key "client_name"
+in APPPATH\Views\admin\client\list.php on line 58.
+ 1 APPPATH\Views\admin\client\list.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "client_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\client\\list.php', 58)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\client\\list.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\CompanyController.php(81): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->listCompany()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:14:44 --> Undefined array key "id"
+in APPPATH\Views\admin\company\edit.php on line 37.
+ 1 APPPATH\Views\admin\company\edit.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\company\\edit.php', 37)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\company\\edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\CompanyController.php(107): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->editCompany('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:15:36 --> Undefined array key "business_name"
+in APPPATH\Views\admin\company\edit.php on line 39.
+ 1 APPPATH\Views\admin\company\edit.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "business_name"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\company\\edit.php', 39)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\company\\edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\CompanyController.php(107): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->editCompany('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:16:08 --> Undefined array key "status"
+in APPPATH\Views\admin\company\edit.php on line 49.
+ 1 APPPATH\Views\admin\company\edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\company\\edit.php', 49)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\company\\edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\CompanyController.php(107): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->editCompany('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:19:10 --> Unclosed '{' on line 41
+in APPPATH\Views\admin\company\edit.php on line 92.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\CompanyController.php(107): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->editCompany('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:45:01 --> include(admin/report/add.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 103.
+ 1 APPPATH\Views\index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/report/add.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 103)
+ 2 APPPATH\Views\index.php(103): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(16): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportAdd()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 07:45:46 --> Undefined variable $business
+in APPPATH\Views\admin\report\add.php on line 41.
+ 1 APPPATH\Views\admin\report\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $business', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php', 41)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\report\\add.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\ReportController.php(16): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportAdd()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:05:44 --> Undefined array key 4
+in APPPATH\Controllers\ReportController.php on line 40.
+ 1 APPPATH\Controllers\ReportController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:05:48 --> Undefined array key 4
+in APPPATH\Controllers\ReportController.php on line 40.
+ 1 APPPATH\Controllers\ReportController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:32:01 --> include(admin/department/add.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 103.
+ 1 APPPATH\Views\index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/department/add.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 103)
+ 2 APPPATH\Views\index.php(103): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\DepartmentController.php(22): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->addDepartment()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

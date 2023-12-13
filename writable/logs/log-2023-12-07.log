@@ -1,0 +1,293 @@
+ERROR - 2023-12-07 05:33:09 --> mysqli_sql_exception: Table 'companies' already exists in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\apurva\fuel-consumption\app\Database\Migrations\2023-12-05-140104_CreateCompaniesTable.php(24): CodeIgniter\Database\Forge->createTable('companies')
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MigrationRunner.php(873): App\Database\Migrations\CreateCompaniesTable->up()
+#6 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-12-07 05:48:34 --> Class "App\Controllers\Client" not found
+in APPPATH\Controllers\DepartmentController.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->listDepartment()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 06:07:51 --> mysqli_sql_exception: Unknown column 'company_name' in 'where clause' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(72): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\ReportController.php(46): App\Controllers\ReportController->returnClientId('JEAN LUC WILAIN')
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\ReportController->reportImport()
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#10 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-07 06:07:51 --> Unknown column 'company_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clients`
+WHERE `company_name` = :company_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\ReportController.php(72): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\ReportController.php(46): App\Controllers\ReportController->returnClientId('JEAN LUC WILAIN')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImport()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 06:09:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\ReportController.php on line 73.
+ 1 APPPATH\Controllers\ReportController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 73)
+ 2 APPPATH\Controllers\ReportController.php(46): App\Controllers\ReportController->returnClientId('JEAN LUC WILAIN')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->reportImport()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 08:31:05 --> Class "App\Controllers\Client" not found
+in APPPATH\Controllers\DepartmentController.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->editDepartment('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 08:33:35 --> Undefined variable $company
+in APPPATH\Views\admin\department\edit.php on line 128.
+ 1 APPPATH\Views\admin\department\edit.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $company', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\department\\edit.php', 128)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\department\\edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\DepartmentController.php(98): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->editDepartment('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 08:34:01 --> Undefined variable $company
+in APPPATH\Views\admin\department\edit.php on line 128.
+ 1 APPPATH\Views\admin\department\edit.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $company', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\department\\edit.php', 128)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\department\\edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\DepartmentController.php(98): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->editDepartment('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 08:34:03 --> Undefined variable $company
+in APPPATH\Views\admin\department\edit.php on line 128.
+ 1 APPPATH\Views\admin\department\edit.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $company', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\department\\edit.php', 128)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\department\\edit.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\DepartmentController.php(98): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->editDepartment('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 08:37:45 --> Unclosed '{' on line 41
+in APPPATH\Views\admin\department\edit.php on line 159.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\DepartmentController.php(98): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->editDepartment('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 09:15:44 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\department\edit.php on line 56.
+ 1 APPPATH\Views\index.php(103): include()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(102): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->editDepartment('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 09:17:05 --> Cannot use object of type mysqli as array
+in APPPATH\Views\admin\department\edit.php on line 56.
+ 1 APPPATH\Views\index.php(103): include()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\DepartmentController.php(102): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DepartmentController->editDepartment('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 10:39:11 --> Undefined variable $department
+in APPPATH\Views\admin\search.php on line 255.
+ 1 APPPATH\Views\admin\search.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $department', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php', 255)
+ 2 APPPATH\Views\index.php(103): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\SearchController.php(14): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SearchController->search()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 10:46:40 --> mysqli_sql_exception: Column 'client_id' in where clause is ambiguous in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `compani...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `compani...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `compani...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `compani...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\CompanyController.php(43): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\CompanyController->getCompanies()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 10:46:40 --> Column 'client_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `companies`.*, `business`.`business_name`, `clients`.`client_name` as `client_name`
+FROM `companies`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `business` ON `business`.`id` = `companies`.`business_id`
+WHERE `client_id` = :client_id:
+AND `status` = :status:
+AND `is_delete` = :is_delete:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CompanyController.php(43): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->getCompanies()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 10:47:29 --> mysqli_sql_exception: Column 'client_id' in where clause is ambiguous in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `compani...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `compani...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `compani...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `compani...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\CompanyController.php(43): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\CompanyController->getCompanies()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 10:47:29 --> Column 'client_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `companies`.*, `business`.`business_name`, `clients`.`client_name` as `client_name`
+FROM `companies`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `business` ON `business`.`id` = `companies`.`business_id`
+WHERE `client_id` = :client_id:
+AND `status` = :status:
+AND `is_delete` = :is_delete:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CompanyController.php(43): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->getCompanies()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 10:57:35 --> mysqli_sql_exception: Column 'business_id' in where clause is ambiguous in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `clients...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `clients...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `clients...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `clients...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\CompanyController.php(34): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\CompanyController->getClient()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 10:57:35 --> Column 'business_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `clients`.*, `business`.`business_name`
+FROM `clients`
+LEFT JOIN `business` ON `business`.`id` = `clients`.`business_id`
+WHERE `business_id` = :business_id:
+AND `status` = :status:
+AND `is_delete` = :is_delete:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CompanyController.php(34): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->getClient()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 10:58:22 --> mysqli_sql_exception: Column 'business_id' in where clause is ambiguous in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `clients...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `clients...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `clients...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `clients...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\CompanyController.php(34): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\CompanyController->getClient()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 10:58:22 --> Column 'business_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `clients`.*, `business`.`business_name` as `business_name`
+FROM `clients`
+LEFT JOIN `business` ON `business`.`id` = `clients`.`business_id`
+WHERE `business_id` = :business_id:
+AND `status` = :status:
+AND `is_delete` = :is_delete:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CompanyController.php(34): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->getClient()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 12:22:14 --> mysqli_sql_exception: Unknown column 'companies.business_id' in 'on clause' in C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `departm...', 0)
+#1 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `departm...')
+#2 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `departm...')
+#3 C:\xampp\htdocs\apurva\fuel-consumption\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `departm...', Array, false)
+#4 C:\xampp\htdocs\apurva\fuel-consumption\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\apurva\fuel-consumption\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\apurva\fuel-consumption\app\Controllers\CompanyController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(942): App\Controllers\CompanyController->getDepartments()
+#8 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#9 C:\xampp\htdocs\apurva\fuel-consumption\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apurva\fuel-consumption\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-07 12:22:14 --> Unknown column 'companies.business_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `departments`.*, `companies`.`company_name` as `company_name`, `business`.`business_name`, `clients`.`client_name` as `client_name`
+FROM `departments`
+LEFT JOIN `business` ON `business`.`id` = `companies`.`business_id`
+LEFT JOIN `clients` ON `clients`.`id` = `companies`.`client_id`
+LEFT JOIN `companies` ON `companies`.`id` = `departments`.`client_id`
+WHERE `companies`.`is_delete` = :companies.is_delete:
+AND `business`.`is_delete` = :business.is_delete:
+AND `clients`.`is_delete` = :clients.is_delete:
+AND `departments`.`company_id` = :departments.company_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CompanyController.php(75): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CompanyController->getDepartments()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
