@@ -55,6 +55,12 @@
                         <i class="fas fa-expand-arrows-alt"></i>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#modal-default-logout"  href="#" role="button">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+
 
             </ul>
         </nav>
@@ -73,10 +79,10 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="<?php echo base_url("public/dist/img/user2-160x160.jpg") ?>" class="img-circle elevation-2" alt="User Image">
+                        <img src="<?= session('profile_img') ?>" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block"><?= session('name') ?></a>
                     </div>
                 </div>
 
@@ -104,7 +110,27 @@
             <?php include($page); ?>
         </div>
         <!-- /.content-wrapper -->
-
+        <div class="modal fade" id="modal-default-logout">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Logout</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p> <strong>Are you sure you want to Logout?</strong></p>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <a href="<?= site_url('logout') ?>" class="btn btn-danger">Logout</a>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
 
         <!-- Main Footer -->
         <?php include_once('layouts/footer.php'); ?>
@@ -154,9 +180,9 @@
             $("#exampleSearch").DataTable({
                 "responsive": true,
                 "lengthChange": false,
-                "paging":false,
+                "paging": false,
                 "autoWidth": false,
-              
+
             });
         });
     </script>
@@ -355,11 +381,17 @@
                     business_id: {
                         required: true,
                     },
+                    month: {
+                        required: true,
+                    },
 
                 },
                 messages: {
                     business_id: {
                         required: "Please select Business Name",
+                    },
+                    month: {
+                        required: "Please select Month-Year",
                     },
 
 

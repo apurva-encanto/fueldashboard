@@ -1,0 +1,118 @@
+CRITICAL - 2023-12-14 05:46:24 --> Unsupported operand types: string - string
+in APPPATH\Views\admin\search.php on line 111.
+ 1 APPPATH\Views\index.php(104): include()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\SearchController.php(14): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SearchController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 06:53:06 --> Array to string conversion
+in APPPATH\Controllers\ReportController.php on line 448.
+ 1 APPPATH\Controllers\ReportController.php(448): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Controllers\\ReportController.php', 448)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportController->exportReport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 07:03:05 --> Too few arguments to function old(), 0 passed in C:\xampp\htdocs\apurva\fuel-consumption\app\Views\admin\search.php on line 40 and at least 1 expected
+in SYSTEMPATH\Common.php on line 842.
+ 1 APPPATH\Views\admin\search.php(40): old()
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\SearchController.php(14): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SearchController->search()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 07:06:38 --> Undefined array key "id"
+in APPPATH\Views\admin\search.php on line 54.
+ 1 APPPATH\Views\admin\search.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php', 54)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\SearchController.php(14): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SearchController->search()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 07:07:03 --> Undefined variable $busines
+in APPPATH\Views\admin\search.php on line 54.
+ 1 APPPATH\Views\admin\search.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $busines', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php', 54)
+ 2 APPPATH\Views\index.php(104): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\admin\\search.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\SearchController.php(14): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SearchController->search()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SearchController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 07:25:57 --> include(admin/profile.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 104.
+ 1 APPPATH\Views\index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin/profile.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php', 104)
+ 2 APPPATH\Views\index.php(104): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Admin.php(180): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 08:26:15 --> Call to undefined function auth()
+in APPPATH\Views\admin\profile.php on line 59.
+ 1 APPPATH\Views\index.php(104): include()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\apurva\\fuel-consumption\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Admin.php(180): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 08:32:16 --> Call to undefined method App\Controllers\Admin::where()
+in APPPATH\Controllers\Admin.php on line 180.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->profile()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 08:32:56 --> Cannot declare class App\Controllers\Admin because the name is already in use
+in APPPATH\Controllers\Admin.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-14 09:00:38 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1726.
+ 1 SYSTEMPATH\BaseModel.php(1726): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\AdminController.php(215): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->profile_update()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 09:04:11 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\AdminController.php(207): CodeIgniter\HTTP\Files\UploadedFile->move('public/images/', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->profile_update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 09:04:45 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\AdminController.php(207): CodeIgniter\HTTP\Files\UploadedFile->move('public/images/', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->profile_update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 09:18:48 --> Call to a member function isValid() on null
+in APPPATH\Controllers\AdminController.php on line 200.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->profile_update()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

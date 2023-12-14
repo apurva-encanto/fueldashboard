@@ -51,7 +51,7 @@
                                             <?php
                                             foreach ($business as $budines) {
                                             ?>
-                                                <option value="<?= $budines['id'] ?>"><?= $budines['business_name'] ?></option>
+                                                <option value="<?= $budines['id'] ?>" ><?= $budines['business_name'] ?></option>
                                             <?php
                                             } ?>
                                         </select>
@@ -94,7 +94,26 @@
                                     <div class="form-group">
                                         <label for="">Report Month</label>
                                         <select class="form-control" name="month" id="c_month">
-                                            <option value="" selected>Select Month</option>
+                                            <option value="">Select Month</option>
+                                            <?php
+                                            // Get the current year
+                                            $currentYear = date('Y');
+
+                                            // Iterate over the months of the current year and the next year (Jan to Dec)
+                                            for ($month = 1; $month <= 24; $month++) {
+                                                $year = $currentYear;
+
+                                                // Adjust the year for the next 12 months
+                                                if ($month > 12) {
+                                                    $year++;
+                                                }
+
+                                                $currentMonth = date('F', mktime(0, 0, 0, $month % 12, 1, $year));
+                                            ?>
+                                                <option value="<?= date('m', mktime(0, 0, 0, $month % 12, 1, $year)) . '-' . $year ?>"><?= $currentMonth . ' ' . $year ?></option>
+                                            <?php
+                                            }
+                                            ?>
                                         </select>
                                     </div>
                                 </div>

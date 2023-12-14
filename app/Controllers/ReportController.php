@@ -308,13 +308,17 @@ class ReportController extends BaseController
 
         $request = service('request');
         $postData = $request->getPost();
-
+        $month= explode('-', $this->request->getVar('month'))[0];
+        $year = explode('-', $this->request->getVar('month'))[1];
+       
         $data = [
             'search' => [
                 'business_id' => $this->request->getVar('business_id'),
                 'client_id' => $this->request->getVar('client_id'),
                 'company_id' => $this->request->getVar('company_id'),
-                'vehicle_id' =>  $this->request->getVar('vehicle_id')
+                'vehicle_id' =>  $this->request->getVar('vehicle_id'),
+                'month' =>  $month,
+                'year' =>  $year,
             ]
 
         ];
@@ -342,6 +346,12 @@ class ReportController extends BaseController
         if (!empty($this->request->getVar('vehicle_id'))) {
             $where['reports.vehicle_no'] = $this->request->getVar('vehicle_id');
         }
+
+        if (!empty($this->request->getVar('month'))) {
+            $where['MONTH(report_date)'] = $month;
+            $where['YEAR(report_date)'] = $year;
+        }
+        
         // Assuming you have a model named ReportModel
         $reportModel = new ReportModel();
         $db = \Config\Database::connect();  
@@ -381,9 +391,9 @@ class ReportController extends BaseController
         $data['page'] = 'admin/report/generate.php';
         return view('index', $data);
         }else{
-             $session = session();
+            $session = session();
             $session->setFlashdata('err', 'Report Not Found');
-            return redirect()->route('admin/search');
+            return redirect()->route('admin/search')->withInput();
         }
     }
 
@@ -433,6 +443,20 @@ class ReportController extends BaseController
 
 
         $sheet = $spreadsheet->getActiveSheet();
+
+        // Assuming your heading is "Your Heading"
+        $heading = $query[0]['client_name'].' Scheme Report -'. date('F', mktime(0, 0, 0, session('search.month') % 12, 1, session('search.year'))).' '. session('search.year');
+   
+        // Calculate the column to start the heading to be centered
+        $columnStart = 'A';
+        $columnEnd = 'Z'; // Adjust this based on the maximum number of columns you want to center
+
+        $columnsCount = ord($columnEnd) - ord($columnStart) + 1;
+        $startingColumn = chr(ord($columnStart) + floor($columnsCount / 2));
+
+        // Set the heading value
+        $sheet->setCellValue($startingColumn . '1', $heading);
+
         $columnHeaders = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V'];
         $columnHeadersName = [
             'Receipt #', 'Client Name', 'Company Name', 'Card Number',
@@ -444,7 +468,7 @@ class ReportController extends BaseController
             'Distance Travelled', 'Transaction Litres', 'Consumption Litres/100km', 'Cost/Km'
         ];
         foreach ($columnHeaders as $key=>$column) {
-            $cellCoordinate = $column . '1';
+            $cellCoordinate = $column . '2';
             $sheet->setCellValue($cellCoordinate, $columnHeadersName[$key]);
             $style = $sheet->getStyle($cellCoordinate);
             $style->getFont()->setBold(true);
@@ -460,7 +484,7 @@ class ReportController extends BaseController
 
         }
 
-        $rows = 2;
+        $rows = 3;
         foreach ($query as $val) {
             $sheet->setCellValue('A' . $rows, $val['receipt']);
             $sheet->setCellValue('B' . $rows, $val['client_name']);

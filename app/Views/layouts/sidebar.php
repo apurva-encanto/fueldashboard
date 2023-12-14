@@ -142,23 +142,43 @@
          </li>
 
          <li class="nav-header">Reports</li>
+
          <li class="nav-item">
-             <a href="<?= base_url('admin/report/import') ?>" class="nav-link">
+             <a href="#" class="nav-link">
                  <i class="nav-icon fas fa-file-alt"></i>
                  <p>
                      Report
+                     <i class="right fas fa-angle-left"></i>
                  </p>
              </a>
+             <ul class="nav nav-treeview">
+                 <li class="nav-item">
+                     <a href="<?= base_url('admin/report/import') ?>" class="nav-link">
+                         <i class="far fa-circle nav-icon"></i>
+                         <p>Add Report</p>
+                     </a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="<?= base_url('admin/list-report') ?>" class="nav-link">
+                         <i class="far fa-circle nav-icon"></i>
+                         <p>List Report</p>
+                     </a>
+                 </li>
+
+             </ul>
+
          </li>
+
          <li class="nav-header">Setting</li>
          <li class="nav-item">
-             <a href="<?= base_url('admin/report/import') ?>" class="nav-link">
+             <a href="<?= base_url('admin/profile') ?>" class="nav-link">
                  <i class="nav-icon fas fa-user"></i>
                  <p>
                      Change Profile
                  </p>
              </a>
          </li>
+
 
 
      </ul>

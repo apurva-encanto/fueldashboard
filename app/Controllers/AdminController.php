@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Controllers;
-use App\Controllers\BaseController;
-use App\Models\Business;
+use App\Models\Admin;
 use App\Models\Client;
 use App\Models\Company;
 use App\Models\Vehicle;
+use App\Models\Business;
+use App\Controllers\BaseController;
 
-class Admin extends BaseController
+class AdminController extends BaseController
 {
     public function __construct()
     {
@@ -171,6 +172,51 @@ class Admin extends BaseController
         }else{
             return redirect()->back(); 
 
+        }
+    }
+
+    public function profile()
+    {
+        $admin =new Admin();
+        $data['user']= $admin->where('id',session()->get('id'))->first();   
+        $data['page'] = 'admin/profile.php';
+        return view('index', $data);
+    }
+
+    public function profile_update()
+    {
+        $update=[];
+        $request = service('request');
+        $postData = $request->getPost();
+        $update['name']= $this->request->getVar('name');
+        $update['email']= $this->request->getVar('email');
+        $update['phone'] = $this->request->getVar('phone');
+        if ($password = $this->request->getVar('password')) 
+        {
+            $update['password']= password_hash($this->request->getVar('password'), PASSWORD_DEFAULT);
+        }
+        $file = $this->request->getFile('file');
+
+        if ($file->isValid() && !$file->hasMoved()) {
+            $file = $this->request->getFile('file');
+
+            // Process the uploaded file
+            $fileName = $file->getName(); // Get the original file name
+            $fileSize = $file->getSize(); // Get the file size
+            $fileType = $file->getClientMimeType(); // Get the file type
+
+            $file->move('public/images', $fileName);
+
+            $filepath = base_url() . "/public/images/" . $fileName;
+            $update['profile_img']= $filepath;
+            $data['profile_img']= $filepath;
+            session()->set($data);
+        }
+        $admin = new Admin();
+
+        if ($admin->update(session('id'), $update)) {
+        session()->setFlashdata('success', 'Profile Updated Successfully!');
+        return redirect()->back();
         }
     }
 

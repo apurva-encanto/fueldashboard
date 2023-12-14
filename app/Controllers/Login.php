@@ -46,6 +46,7 @@ class Login extends BaseController
                         'id' => $data['id'],
                         'name' => $data['name'],
                         'email' => $data['email'],
+                        'profile_img' => $data['profile_img'],
                         'isLoggedIn' => TRUE
                     ];
                     $session->set($ses_data);
@@ -71,6 +72,25 @@ class Login extends BaseController
         $session->destroy();
         $session->setFlashdata('success', 'Logout Successfully');
         return redirect()->to('/admin/login');
+    }
+
+    public function forgotPassword()
+    {
+        return view('admin/forgot-password.php');
+    }
+    public function resetLink()
+    {
+        $admin = new Admin();
+        $email = $this->request->getVar('email');
+
+        $data = $admin->where('email', $email)->first();
+        if ($data) {
+
+            echo "ok";
+        }else{
+            session()->setFlashdata('err', 'Email does not exist.');
+            return redirect()->back()->withInput();
+        }
     }
 
 }

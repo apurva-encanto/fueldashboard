@@ -236,13 +236,13 @@
              }
          }
      });
-    //  var doughnutData = {
-    //      labels: ['Asked Amount', 'Discount Amount', 'Customer Pay Amount', 'Total Distance Covered', 'Total Liters Petrol Used'],
-    //      datasets: [{
-    //          data: [sum_amt, discount_amt, customer_pay_amt, total_distance_covered, total_liters_petrol_used],
-    //          backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#3498db', '#95a5a6'],
-    //      }]
-    //  };
+     var doughnutData = {
+         labels: ['Asked Amount', 'Discount Amount', 'Customer Pay Amount', 'Total Distance Covered', 'Total Liters Petrol Used'],
+         datasets: [{
+             data: [sum_amt, discount_amt, customer_pay_amt, total_distance_covered, total_liters_petrol_used],
+             backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#3498db', '#95a5a6'],
+         }]
+     };
 
      // Get context with jQuery - using jQuery's .get() method.
      var doughnutChartCanvas = $('#doughnutChart').get(0).getContext('2d');

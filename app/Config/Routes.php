@@ -11,14 +11,14 @@ $routes->get('/test', 'Home::getTest');
 $routes->get('/logout', 'Login::logout');
 $routes->group('admin', ['filter' => 'authGuard'], function ($routes) {
 
-    $routes->get('dashboard','Admin::index');
+    $routes->get('dashboard','AdminController::index');
 
-    $routes->get('add-business','Admin::addBusiness');
-    $routes->get('list-business', 'Admin::listBusiness');
-    $routes->post('storeBusiness', 'Admin::storeBusiness');
-    $routes->post('editDataBusiness', 'Admin::editDataBusiness');
-    $routes->get('business/edit/(:num)', 'Admin::editBusiness/$1');
-    $routes->get('business/delete/(:num)', 'Admin::deleteBusiness/$1');
+    $routes->get('add-business','AdminController::addBusiness');
+    $routes->get('list-business', 'AdminController::listBusiness');
+    $routes->post('storeBusiness', 'AdminController::storeBusiness');
+    $routes->post('editDataBusiness', 'AdminController::editDataBusiness');
+    $routes->get('business/edit/(:num)', 'AdminController::editBusiness/$1');
+    $routes->get('business/delete/(:num)', 'AdminController::deleteBusiness/$1');
 
 
 
@@ -64,9 +64,14 @@ $routes->group('admin', ['filter' => 'authGuard'], function ($routes) {
     $routes->get('list-vehicles', 'VehicleController::listVehicles');
     $routes->post('storeVehicle', 'VehicleController::storeVehicle');
 
+    $routes->get('profile', 'AdminController::profile');
+    $routes->post('profile_update', 'AdminController::profile_update');
+
 
 });
 $routes->get('/admin/login', 'Login::adminLogin',['as' => 'admin/login']);
 $routes->post('/admin/login-verify', 'Login::adminLoginValidate');
+$routes->get('forgot-password', 'Login::forgotPassword');
+$routes->post('forgot-password', 'Login::resetLink');
 
 

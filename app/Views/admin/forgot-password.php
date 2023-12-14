@@ -24,7 +24,7 @@
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                <p class="login-box-msg">Enter your email we will send reset link</p>
                 <?php $validation = \Config\Services::validation(); ?>
 
                 <?php if (session()->getFlashdata('err')) : ?>
@@ -38,9 +38,9 @@
                     </div>
                 <?php endif; ?>
 
-                <form action="<?= base_url('admin/login-verify') ?>" method="post">
+                <form action="" method="post">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" value="<?= old('email') ?>" name="email" placeholder="Email">
+                        <input type="email" class="form-control" required value="<?= old('email') ?>" name="email" placeholder="Email">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -60,14 +60,7 @@
                         </div>
                     <?php } ?>
 
-                    <div class="input-group mb-3">
-                        <input type="password" name="password" value="" class=" form-control" placeholder="Password">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
-                        </div>
-                    </div>
+             
                     <?php if ($validation->getError('password')) { ?>
                         <div class='text-danger mb-1'>
                             <?= $error = $validation->getError('password'); ?>
@@ -76,17 +69,10 @@
 
 
                     <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">
-                                    Remember Me
-                                </label>
-                            </div>
-                        </div>
+              
                         <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-block">Send Reset Link</button>
                         </div>
                         <!-- /.col -->
                     </div>
@@ -95,7 +81,7 @@
                 <!-- /.social-auth-links -->
 
                 <p class="mb-1">
-                    <a href="<?= base_url('forgot-password') ?>">I forgot my password</a>
+                    <a href="<?= base_url('admin/login') ?>">Login</a>
                 </p>
                 <p class="mb-0">
                 </p>
