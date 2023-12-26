@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://localhost/apurva/fuel-consumption/';
+    public string $baseURL = 'https://fueldashboard.encantotech.in/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

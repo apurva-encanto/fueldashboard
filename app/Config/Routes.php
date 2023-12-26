@@ -59,6 +59,7 @@ $routes->group('admin', ['filter' => 'authGuard'], function ($routes) {
     $routes->post('report/import', 'ReportController::reportImportBulkData');
     $routes->get('report/generate', 'ReportController::generateReportData');
     $routes->get('report/download', 'ReportController::exportReport');
+    $routes->get('list-report', 'ReportController::listReport');
     
     $routes->get('add-vehicles', 'VehicleController::addVehicles');
     $routes->get('list-vehicles', 'VehicleController::listVehicles');

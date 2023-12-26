@@ -27,9 +27,9 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'fuel_consumption',
+        'username'     => 'u197676560_fueldashboard',
+        'password'     => 'E;3#qz>y9k',
+        'database'     => 'u197676560_fueldashboard',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

@@ -525,6 +525,11 @@ class ReportController extends BaseController
         unlink($tempFilePath);      
 
     }
+    
+    public function listReport()
+    {
+         return view('admin/comingsoon.php');
+    }
 
 }
 ?>
